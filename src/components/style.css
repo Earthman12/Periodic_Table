@@ -1,0 +1,145 @@
+*{
+    margin: auto;
+}
+
+html{
+    font-size: 16px;
+}
+
+/* CSS for App */
+.body{
+    width: 100vw;
+    text-align: center;
+}
+
+.table{
+    width: 97.5%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+/* End App CSS */
+
+
+/* CSS for each Element object */
+.element{
+    font-size: .85rem;
+    width: 90%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: .5em;
+    margin: .1em 0;
+    padding: 0 .2em;
+    color: white
+}
+
+.symbol{
+    padding: .6em 0;
+}
+
+.element-2{
+    grid-column-start: -2;
+}
+
+.element-5,
+.element-13{
+    grid-column-start: 13;
+}
+
+.element-58,
+.element-90{
+    grid-column-start: 3;
+}
+
+.element-119{
+    grid-column-start: -2;
+}
+
+.nonmetal{
+    background-color: orchid;
+}
+
+.noble,
+.element-118{
+    background-color: blueviolet;
+}
+
+.alkali{
+    background-color: yellow;
+}
+
+.alkaline {
+    background-color: orange;
+}
+
+.lanthanide{
+    background-color: maroon;
+}
+
+.actinide{
+    background-color: green;
+}
+
+.element-119{
+    background-color: gray;
+}
+
+.transition,
+.element-109,
+.element-110,
+.element-111{
+    background-color: red;
+}
+
+.post-transition,
+.element-113,
+.element-115,
+.element-116{
+    background-color: navy;
+}
+
+.metalloid,
+.element-84{
+    background-color: aquamarine;
+}
+
+.element-1{
+    background-color: pink;
+}
+
+.element-9,
+.element-17,
+.element-35,
+.element-53,
+.element-85,
+.element-117{
+    background-color: teal;
+}
+
+/* End Element CSS */
+
+
+/* CSS for the Element Summary object */
+.elementBox{
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    border: 1px dashed black;
+    padding: .5em;
+    margin-bottom: .5em;
+    border-radius: .5em;
+}
+
+.elementSquare{
+    border: 1px groove black;
+    border-radius: .5em;
+    width: 7.5%;
+    height: auto;
+}
+
+.elementSummary{
+    width: 40%;
+}
+
+/* End Element Summary CSS */
