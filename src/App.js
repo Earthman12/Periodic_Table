@@ -5,6 +5,7 @@ import './components/style.css';
 
 export default class App extends Component{
 
+  // App state has one variable to keep track of what number element is selected, sets the intial selected element to 1(Hydrogen)
   constructor(props) {
     super(props);
     this.state = {
@@ -13,6 +14,7 @@ export default class App extends Component{
     this.changeElement = this.changeElement.bind(this);
   }
 
+  // A function to change the current selected element to the new one by changing the state to the new number 
   changeElement(newElementNum){
     this.setState({
       elementNum : newElementNum
@@ -30,6 +32,7 @@ export default class App extends Component{
 
         <div className = "table">
 
+          {/* All 119 Element objects with props 'num': corresponding to its Element number and onClick which passes the function 'changeElement(newElementNum)' */}
           <Element num = "1" onClick = {this.changeElement} />
           <Element num = "2" onClick = {this.changeElement} />
           <Element num = "3" onClick = {this.changeElement} />
@@ -161,6 +164,7 @@ export default class App extends Component{
 
         </div>
 
+        {/* Selected Element Display */}
         <h1>Current Selected Element: </h1>
         <ElementSummary num = {this.state.elementNum} />
 
