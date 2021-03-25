@@ -32,6 +32,7 @@ export default class Element extends Component {
         return(
 
             // This div surrounds the element info with a border and when clicked will change the selected element to this one and display its properties/summary
+            // An inline conditional is called on the className to have it set the state of hover to active or empty based on whether the mouse is on it or not
            <div
             onMouseEnter = {this.onMouseEnter}
             onMouseLeave = {this.onMouseClose}

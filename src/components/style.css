@@ -117,6 +117,11 @@ html{
     background-color: teal;
 }
 
+.active{
+    background: #fff;
+    color: black;
+}
+
 /* End Element CSS */
 
 
@@ -136,6 +141,7 @@ html{
     border-radius: .5em;
     width: 7.5%;
     height: auto;
+    color: white;
 }
 
 .elementSummary{
